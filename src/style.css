@@ -36,7 +36,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #276548; outline-offs
 .hero-venue-mark { display: block; width: 74px; flex: none; }
 .hero-venue-mark img { display: block; width: 100%; height: auto; }
 .hero h1 { margin: 0; font-weight: 600; }
-.hero-name { display: flex; align-items: center; justify-content: center; gap: .12em; font-size: clamp(66px, 9vw, 112px); line-height: 1; letter-spacing: -.085em; }
+.hero-name { display: flex; align-items: center; justify-content: center; gap: .12em; font-size: clamp(52px, 7.6vw, 96px); line-height: 1; letter-spacing: -.085em; }
 .hero-icon { width: .68em; height: .68em; flex: none; color: #3f8b5b; stroke-width: 1.8; }
 .hero-wordmark { display: inline-flex; align-items: baseline; gap: .12em; white-space: nowrap; }
 .hero-wordmark-agent { letter-spacing: -.085em; }
@@ -233,7 +233,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #276548; outline-offs
   .wrap { width: calc(100% - 36px); }
   .hero { padding-top: 54px; padding-bottom: 50px; }
   .hero-venue { margin-bottom: 19px; }
-  .hero-name { gap: .08em; font-size: clamp(58px, 14vw, 76px); }
+  .hero-name { gap: .08em; font-size: clamp(34px, 10.5vw, 64px); }
   .hero-icon { width: .58em; height: .58em; }
   .hero-paper-title { margin-top: 14px; font-size: clamp(23px, 6vw, 29px); line-height: 1.2; }
   .hero-authors { gap: 9px 19px; margin-top: 31px; }

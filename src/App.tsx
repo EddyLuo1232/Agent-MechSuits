@@ -6,10 +6,10 @@ import { Pause, Play, RotateCcw, Search } from "lucide-react";
 const phases = [
   { label: "Train a probe", title: "Train a linear probe", group: "MAS · PREPARATION" },
   { label: "Select layer", title: "Find the hidden state", group: "MAS · PREPARATION" },
-  { label: "Detect risk", title: "Detect harmful steps", group: "AGENTLENS DETECTION" },
-  { label: "Select top 10", title: "Keep the top 10", group: "AGENTLENS MITIGATION" },
-  { label: "Tune α", title: "Tune steering strength", group: "AGENTLENS MITIGATION" },
-  { label: "Multi-step steer", title: "Steer at each step", group: "AGENTLENS MITIGATION" },
+  { label: "Detect risk", title: "Detect harmful steps", group: "AGENT MECHSUITS DETECTION" },
+  { label: "Select top 10", title: "Keep the top 10", group: "AGENT MECHSUITS MITIGATION" },
+  { label: "Tune α", title: "Tune steering strength", group: "AGENT MECHSUITS MITIGATION" },
+  { label: "Multi-step steer", title: "Steer at each step", group: "AGENT MECHSUITS MITIGATION" },
 ];
 
 const authors = [
@@ -124,7 +124,7 @@ function TopTenVisual() {
 
 function TuneVisual() {
   return (
-    <div className="tune-visual" role="img" aria-label="The selected top ten dimensions stay fixed while AgentLens tests steering strengths alpha one and alpha two. An LLM judge checks safety and utility, then chooses alpha star for the harmful step.">
+    <div className="tune-visual" role="img" aria-label="The selected top ten dimensions stay fixed while Agent MechSuits tests steering strengths alpha one and alpha two. An LLM judge checks safety and utility, then chooses alpha star for the harmful step.">
       <div className="visual-axis"><span>TOP 10 DIMENSIONS · FIXED</span><span>ADAPTIVE α</span></div>
       <div className="tune-layout">
         <div className="tune-subspace">
@@ -223,7 +223,7 @@ export default function Home() {
     <main id="top">
       <section className="hero wrap" aria-labelledby="hero-title">
         <p className="hero-venue"><span className="hero-venue-mark" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}neurips-logo.svg`} alt="" /></span><span>NeurIPS 2026</span></p>
-        <h1 id="hero-title" aria-label="AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent"><span className="hero-name"><Search className="hero-icon" aria-hidden="true" strokeWidth={1.8} /><span className="hero-wordmark"><span className="hero-wordmark-agent">Agent</span><em>Lens:</em></span></span>{" "}<span className="hero-paper-title">Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent</span></h1>
+        <h1 id="hero-title" aria-label="Agent MechSuits: Mechanistic Subspace Safety Steering for Multi-Turn CLI Agents"><span className="hero-name"><Search className="hero-icon" aria-hidden="true" strokeWidth={1.8} /><span className="hero-wordmark"><span className="hero-wordmark-agent">Agent</span>{" "}<em>MechSuits:</em></span></span>{" "}<span className="hero-paper-title">Mechanistic Subspace Safety Steering for Multi-Turn CLI Agents</span></h1>
         <ul className="hero-authors" aria-label="Authors">
           {authors.map((author) => <li key={author.name}>{author.name}<sup>{author.affiliation}</sup></li>)}
         </ul>
@@ -268,7 +268,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer wrap"><span>© 2026 AgentLens</span><a href="#top">Back to top ↑</a></footer>
+      <footer className="footer wrap"><span>© 2026 Agent MechSuits</span><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }

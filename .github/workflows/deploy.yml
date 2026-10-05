@@ -1,4 +1,4 @@
-name: Deploy AgentLens website
+name: Deploy Agent MechSuits website
 
 on:
   push:

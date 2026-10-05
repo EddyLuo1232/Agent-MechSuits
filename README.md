@@ -1,6 +1,8 @@
-# AgentLens website
+# Agent MechSuits website
 
-The React demo for [AgentLens](https://github.com/EddyLuo1232/AgentLens).
+The React project page for **Agent MechSuits: Mechanistic Subspace Safety Steering for Multi-Turn CLI Agents**.
+
+[Research code](https://github.com/EddyLuo1232/AgentLens).
 
 ## Development
 
