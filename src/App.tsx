@@ -222,7 +222,7 @@ export default function Home() {
   return (
     <main id="top">
       <section className="hero wrap" aria-labelledby="hero-title">
-        <p className="hero-venue"><span className="hero-venue-mark" aria-hidden="true"><img src="/agentlensweb/neurips-logo.svg" alt="" /></span><span>NeurIPS 2026</span></p>
+        <p className="hero-venue"><span className="hero-venue-mark" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}neurips-logo.svg`} alt="" /></span><span>NeurIPS 2026</span></p>
         <h1 id="hero-title" aria-label="AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent"><span className="hero-name"><Search className="hero-icon" aria-hidden="true" strokeWidth={1.8} /><span className="hero-wordmark"><span className="hero-wordmark-agent">Agent</span><em>Lens:</em></span></span>{" "}<span className="hero-paper-title">Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent</span></h1>
         <ul className="hero-authors" aria-label="Authors">
           {authors.map((author) => <li key={author.name}>{author.name}<sup>{author.affiliation}</sup></li>)}
@@ -231,8 +231,8 @@ export default function Home() {
           {affiliations.map((affiliation, index) => <li key={affiliation}><sup>{index + 1}</sup>{affiliation}</li>)}
         </ol>
         <div className="hero-links">
-          <a href="https://github.com/EddyLuo1232/AgentLens" target="_blank" rel="noreferrer"><img className="github-logo" src="/agentlensweb/github-logo.svg" alt="" aria-hidden="true" />GitHub</a>
-          <a href="https://arxiv.org/pdf/2606.22673" target="_blank" rel="noreferrer" aria-label="arXiv paper"><img className="arxiv-logo" src="/agentlensweb/arxiv-logo.svg" alt="arXiv" /></a>
+          <a href="https://github.com/EddyLuo1232/AgentLens" target="_blank" rel="noreferrer"><img className="github-logo" src={`${import.meta.env.BASE_URL}github-logo.svg`} alt="" aria-hidden="true" />GitHub</a>
+          <a href="https://arxiv.org/pdf/2606.22673" target="_blank" rel="noreferrer" aria-label="arXiv paper"><img className="arxiv-logo" src={`${import.meta.env.BASE_URL}arxiv-logo.svg`} alt="arXiv" /></a>
         </div>
       </section>
 
